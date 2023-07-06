@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(red,yellow,yellow,blue);
+    display: grid;
+    /* justify-content: center; */
+    place-items: center;
+    /* align-items: center; */
+
+}
+.game-info{
+
+    margin: auto;
+    padding:15px;
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 25px;
+
+}
+.box-wrapper{
+display: grid;
+background-color: rgb(255, 255, 255,.5);
+width: 300px;
+height: 300px;
+border-radius: 1rem;
+aspect-ratio: 1/1;
+/* text-align: center; */
+/* align-items: center; */
+/* padding: px; */
+grid-template-columns:auto auto auto ;
+/* grid-template-rows: (3,1fr); */
+/* grid-template-columns: (3,1fr); */
+}
+.box{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    /* border: 2px solid red; */
+}
+.box1,.box2,.box4,.box5{
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    /* aspect-ratio: 1/1;; */
+    
+}
+.box3,.box6{
+    border-bottom: 2px solid grey;
+    
+}
+.box7,.box8{
+    border-right: 2px solid grey;
+
+}
+.game-stauts{
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    /* text-align: center; */
+    border-radius:25px;
+    width: 120px;
+    /* height: 2px; */
+    padding:10px;
+    /* display: hidden; */
+    opacity: 0;
+}
+.win{
+    background-color: green;
+}
+.active {
+    opacity: 1;
+}
+
